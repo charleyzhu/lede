@@ -72,7 +72,7 @@ jobs:
           cat feeds.conf.default
 
           cd package
-          git clone https://github.com/kenzok8/openwrt-packages.git
+          git clone https://github.com/kenzok8/openwrt-packages.git kenzok8-openwrt-packages
 
       - name: Update feeds
         run: |
