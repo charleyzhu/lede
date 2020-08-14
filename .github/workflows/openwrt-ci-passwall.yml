@@ -171,11 +171,11 @@ jobs:
           # CONFIG_PACKAGE_luci-app-openvpn=y
           # CONFIG_PACKAGE_luci-app-openvpn-server=y
           # CONFIG_PACKAGE_luci-app-qbittorrent=y
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
-          # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=n
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=n
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=n
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=n
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=n
           CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-app-v2ray-server=y
           CONFIG_PACKAGE_luci-app-verysync=y
@@ -187,7 +187,21 @@ jobs:
           CONFIG_PACKAGE_luci-app-openclash=y
           CONFIG_PACKAGE_luci-app-adguardhome=y
           CONFIG_PACKAGE_luci-app-smartdns=y
-          CONFIG_PACKAGE_luci-app-passwall
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ipt2socks
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Server
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_kcptun
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_haproxy
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ChinaDNS_NG
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_pdnsd
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_dns2socks
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_v2ray-plugin
+          CONFIG_PACKAGE_luci-app-passwall_INCLUDE_simple-obfs
           
           EOF
 
